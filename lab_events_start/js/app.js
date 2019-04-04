@@ -48,4 +48,11 @@ const handleFormSubmit = function(event){
 const form = document.querySelector('#new-item-form');
 form.addEventListener('submit', handleFormSubmit);
 
+const handleDeleteButtonClick = function() {
+  const bookList = document.querySelector('#books');
+  bookList.innerHTML='';
+};
+
+const clickDeleteButton = document.querySelector('#delete');
+clickDeleteButton.addEventListener('click',handleDeleteButtonClick);
 }) // end main block
